@@ -27,8 +27,8 @@ function placeRect(x, y, width, height) {
     const elem = document.createElement('div');
     elem.classList.add('mosaic-element');
     root.append(elem);
-    elem.style.gridRow = `${x + 1} / ${width}`;
-    elem.style.gridColumn = `${y + 1} / ${height}`;
+    elem.style.gridRow = `${y + 1} / ${height + 1}`;
+    elem.style.gridColumn =  `${x + 1} / ${width + 1}`;
 }
 
 function randomRect(){
@@ -36,8 +36,8 @@ function randomRect(){
     let height = randomSize();
     let x = randomPosition();
     let y = randomPosition();
-    console.log(x, width , y, height);
+    //console.log(x, width , y, height);
     placeRect(x, y, width, height);
 }
-   
+
 randomRect();
