@@ -9,23 +9,24 @@
   <div class="wrap">
     <header class="header">
       <div class="choose">
-        <input type="color" id="border-color">
+        <input type="color" id="border-color" value="#A5A5A5">
         <div class="label">
           <label for="border-color">Mosaic border color</label>
         </div>
-        <input type="color" id="background-color">
+        <input type="color" id="block-background-color" value="#6BCDCC">
         <div class="label">
-          <label for="background-color">Fragment background color</label>
+          <label for="block-background-color">Fragment background color</label>
         </div>
       </div>
       <div class="generate-byn">
-        <button type="button">
+        <span class="blocks-number">Blocks number: 0</span>
+        <button type="button" id="new-game-btn">
           Generate New
         </button>
       </div>
     </header>
     <main class="mosaic">
-      <div id="root"></div>
+      <div id="mosaic-game-grid"></div>
     </main>
   </div>
 
