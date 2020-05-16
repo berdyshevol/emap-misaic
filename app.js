@@ -1,2 +1,1 @@
-const root = document.getElementById('root');
-
+import MosaicPage from './phones/phones-page.js';

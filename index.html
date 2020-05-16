@@ -6,7 +6,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="root"></div>
+  <div class="wrap">
+    <header class="header">
+      <div class="choose">
+        <input type="color" id="border-color">
+        <div class="label">
+          <label for="border-color">Mosaic border color</label>
+        </div>
+        <input type="color" id="background-color">
+        <div class="label">
+          <label for="background-color">Fragment background color</label>
+        </div>
+      </div>
+      <div class="generate-byn">
+        <button type="button">
+          Generate New
+        </button>
+      </div>
+    </header>
+    <main class="mosaic">
+      <div id="root"></div>
+    </main>
+  </div>
+
   <script src="./app.js"></script>
 </body>
 </html>
