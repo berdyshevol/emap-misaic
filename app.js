@@ -58,3 +58,9 @@ function activeBlock(block) {
 borderInput.addEventListener('change', (e) => {
   game.style.borderColor = borderInput.value;
 });
+
+colorInput.addEventListener('change', (e) => {
+  if (selected) {
+    selected.style.backgroundColor = colorInput.value;
+  }
+});
