@@ -11,7 +11,7 @@ function playMosaic() {
   while (game.firstChild) {
     game.removeChild(game.firstChild);
   }
-  const number = Math.floor(Math.random() * (40000 - 9 + 1)) + 9;
+  const number = Math.floor(Math.random() * (1000 - 9 + 1)) + 9;
   blockNumberWrapper.innerText = `Blocks number: ${number}`;
   const sqrt = Math.floor(Math.sqrt(number*2));
 
@@ -57,4 +57,10 @@ function activeBlock(block) {
 
 borderInput.addEventListener('change', (e) => {
   game.style.borderColor = borderInput.value;
+});
+
+colorInput.addEventListener('change', (e) => {
+  if (selected) {
+    selected.style.backgroundColor = colorInput.value;
+  }
 });
